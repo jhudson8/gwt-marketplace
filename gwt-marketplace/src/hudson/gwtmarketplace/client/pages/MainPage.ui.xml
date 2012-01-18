@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:c='urn:import:hudson.gwtmarketplace.client.components'>
+
+	<g:FlowPanel>
+		<c:Section title="What is GWT Marketplace?" ui:field="overview">
+			<g:HTML>
+				GWT Marketplace is a home for GWT developers to publish their products and
+				GWT users to rate, comment and search on GWT products.
+				<br/><br/>
+			</g:HTML>
+			<g:HTMLPanel>
+				<table>
+					<tr>
+						<td><g:Hyperlink targetHistoryToken="_new">Register a new product</g:Hyperlink></td>
+						<td>or</td>
+						<td><a href="http://code.google.com/p/gwtmarketplace/issues/list" target="_blank">Submit a bug or feature request</a></td>
+					</tr>
+				</table>
+			</g:HTMLPanel>
+		</c:Section>		
+		<g:HorizontalPanel ui:field="horizPanel" width="100%" spacing="12">
+			<c:Section ui:field="newAndUpdated" title="New and Updated"></c:Section>
+			<c:Section ui:field="topRated" title="Top Rated"></c:Section>
+			<c:Section ui:field="mostActive" title="Most Active"></c:Section>
+		</g:HorizontalPanel>
+		<c:Section title="GWT Blog" ui:field="blogFeed"></c:Section>
+		
+	</g:FlowPanel>
+
+</ui:UiBinder>

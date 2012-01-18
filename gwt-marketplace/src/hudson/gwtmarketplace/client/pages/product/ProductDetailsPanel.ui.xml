@@ -1,0 +1,103 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<ui:style>
+		tr.even {
+			background-color: #FFFFFF;
+		}
+		tr.odd {
+		}
+		table.infoTable {
+			border-spacing: 0;
+		}
+		table.infoTable td {
+			padding-right: 12px;
+			padding: 4px;
+		}
+		.rateIt {
+			font-size: 14px;
+		}
+		.rating {
+			color: #425A70;
+			font-size: 18px;
+		}
+	</ui:style>
+
+	<g:HorizontalPanel>
+		<g:FlowPanel>
+			<g:HTMLPanel>
+				<img ui:field="icon" class="productIcon"/>
+				<div align="center">
+					<g:HTMLPanel styleName="{style.rating}" ui:field="ratingContainer"></g:HTMLPanel>
+					<g:FlowPanel styleName="{style.rateIt}">
+						<g:Anchor ui:field="rateIt">Rate It!</g:Anchor>
+					</g:FlowPanel>
+				</div>
+				<div class="padding-top">
+					<h3>Links</h3>
+					<g:VerticalPanel ui:field="links"></g:VerticalPanel>
+				</div>
+			</g:HTMLPanel>
+		</g:FlowPanel>
+
+		<g:FlowPanel>
+			<g:HTMLPanel>
+				<div ui:field='description'></div>
+			</g:HTMLPanel>
+			<g:HTMLPanel>
+				<div>
+					<h3>Tags</h3>
+					<div class="tags" ui:field='tags'></div>
+				</div>
+			</g:HTMLPanel>
+			<g:HTMLPanel ui:field="additionalDetailsContainer">
+				<div class="margin-top">
+					<h3>Additional Details</h3>
+					
+					<div class="detailsList">
+						<table class="{style.infoTable}">
+							<tr ui:field="categoryRow" class="{style.odd}">
+								<td>Category:</td>
+								<td><span ui:field='category'></span></td>
+							</tr>
+							<tr ui:field="versionNumberRow" class="{style.even}">
+								<td>Version Number:</td>
+								<td><span ui:field='versionNumber'></span></td>
+							</tr>
+							<tr ui:field="organizationRow" class="{style.odd}">
+								<td>Organization:</td>
+								<td><span ui:field='organization'></span></td>
+							</tr>
+							<tr ui:field="createdDateRow" class="{style.even}">
+								<td>Created:</td>
+								<td><span ui:field='createdDate'></span></td>
+							</tr>
+							<tr ui:field="lastUpdatedDateRow" class="{style.odd}">
+								<td>Last Updated:</td>
+								<td><span ui:field='lastUpdatedDate'></span></td>
+							</tr>
+							<tr ui:field="developmentStatusRow" class="{style.even}">
+								<td>Development Status:</td>
+								<td><span ui:field='developmentStatus'></span></td>
+							</tr>
+							<tr ui:field="licenseRow" class="{style.odd}">
+								<td>License:</td>
+								<td><span ui:field='license'></span></td>
+							</tr>
+							<tr class="{style.even}">
+								<td>Views (daily / monthly):</td>
+								<td><span ui:field='views'></span></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</g:HTMLPanel>
+			<g:FlowPanel ui:field="newsfeedContainer">
+				<g:HTMLPanel><h3>Newsfeed</h3></g:HTMLPanel>
+				<g:FlowPanel ui:field="newsfeed"></g:FlowPanel>
+			</g:FlowPanel>
+		</g:FlowPanel>
+	</g:HorizontalPanel>
+</ui:UiBinder>

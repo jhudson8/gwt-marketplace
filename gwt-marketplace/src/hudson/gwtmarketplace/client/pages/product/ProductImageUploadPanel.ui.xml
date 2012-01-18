@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:c='urn:import:hudson.gwtmarketplace.client.components'>
+
+	<ui:style>
+		.uploaderLabel {
+			padding-right: 24px;
+		}
+	</ui:style>
+
+	<g:FormPanel method="post" encoding="multipart/form-data" ui:field="imageUploadForm" action="/gwt_marketplace/uploadImage">
+		<g:HorizontalPanel>
+			<g:HTML styleName="{style.uploaderLabel}">Choose Product Icon</g:HTML>
+			<g:FileUpload name="icon" ui:field="fileUpload"></g:FileUpload>
+			<g:Hidden name="key" ui:field="imageUploadKey"></g:Hidden>
+		</g:HorizontalPanel>
+	</g:FormPanel>
+</ui:UiBinder>

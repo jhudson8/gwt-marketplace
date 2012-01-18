@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:FlowPanel>
+		<g:HTMLPanel>
+			<div id="header">
+				<div id="titlebar">
+					GWT Marketplace
+				</div>
+				<div id="subtitlebar">
+					Made with GWT for GWT
+				</div>
+			</div>
+			<div id="headerlinks">
+				<table width="100%">
+					<td>
+						<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="middle">
+									<a href="#">Home</a> |
+									<a href="#_search">Search</a>
+									&nbsp;
+								</td>
+								<td valign="middle">
+									<g:TextBox ui:field="searchBox" styleName="field-medium"></g:TextBox>
+								</td>
+								<td valign="middle" style="padding-left: 2px">
+									<g:Image ui:field="searchImg"></g:Image>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td align="right">
+						<g:Anchor ui:field="loginLogout">Login</g:Anchor>
+					</td>
+				</table>
+			</div>
+		</g:HTMLPanel>
+	</g:FlowPanel>
+
+</ui:UiBinder>

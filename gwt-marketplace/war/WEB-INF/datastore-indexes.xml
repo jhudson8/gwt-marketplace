@@ -1,0 +1,33 @@
+<datastore-indexes autoGenerate="false">
+
+    <datastore-index kind="prdt_cmt" ancestor="true">
+        <property name="createdDate" direction="desc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="categoryId" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="tags" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="searchFields" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="searchFields" direction="asc"/>
+        <property name="tags" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="categoryId" direction="asc"/>
+        <property name="tags" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="prdct" ancestor="false" source="manual">
+        <property name="numDailyViews>" direction="asc"/>
+        <property name="numDailyViews" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

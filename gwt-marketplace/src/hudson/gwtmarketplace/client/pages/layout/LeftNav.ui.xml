@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:c='urn:import:hudson.gwtmarketplace.client.components'>
+
+	<g:FlowPanel>
+		<c:Section ui:field="categories" title="Categories"></c:Section>
+	</g:FlowPanel>
+
+</ui:UiBinder>

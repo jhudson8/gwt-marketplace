@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:c='urn:import:hudson.gwtmarketplace.client.components'>
+
+	<g:FlowPanel>
+		<g:DisclosurePanel ui:field="searchPanel">
+			<g:FlowPanel>
+				<c:LabeledTextBox label="Search For" ui:field="searchFor"></c:LabeledTextBox>
+				<c:LabeledTextBox label="Tag" ui:field="tag"></c:LabeledTextBox>
+				<c:LabeledListBox label="Category" ui:field="category"></c:LabeledListBox>
+				<g:FlowPanel styleName="button-group">
+					<g:SubmitButton ui:field="searchBtn">Search</g:SubmitButton>
+					<g:ResetButton>Clear</g:ResetButton>
+				</g:FlowPanel>
+			</g:FlowPanel>
+		</g:DisclosurePanel>
+		<g:SimplePanel ui:field="infoContainer" styleName="margin-top"></g:SimplePanel>
+		<g:SimplePanel ui:field="searchResultsContainer" styleName="margin-top"></g:SimplePanel>
+	</g:FlowPanel>
+</ui:UiBinder>

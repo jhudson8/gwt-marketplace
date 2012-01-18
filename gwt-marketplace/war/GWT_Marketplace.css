@@ -1,0 +1,118 @@
+/** Add css rules here for your application. */
+
+body {
+	font: 13.34px helvetica, arial, freesans, clean, sans-serif;
+	background: url(images/bg.png);
+}
+
+.ajax-loading {
+	cursor: wait;
+}
+.ajax-loading a {
+	cursor: wait;
+}
+
+#titlebar {
+	color: #425A70;
+	font-weight: bold;
+	font-size: 20px;	
+}
+
+#header {
+	position: relative;
+}
+#headerlinks {
+	background: url(images/line2.png);
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#headerlinks a {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+#headerlinks a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;	
+}
+#subtitlebar {
+	position: absolute;
+	left: 220px;
+	top: 4px;
+	color: #425A70;
+	font-size: 14px;
+}
+
+.feed-odd {
+	background-color: #FFFFFF;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-bottom: 2px;
+}
+
+.gwt-TabPanel {
+	width: 100%;
+}
+.margin-top {
+	margin-top: 12px;	
+}
+.padding-top {
+	padding-top: 12px;	
+}
+
+.navContainer {
+	position: absolute;
+	width: 155px;
+}
+
+.bodyContainer {
+	margin-left: 167px;
+	margin-top: 12px;
+}
+
+.mainSectionContainer {
+	margin-left: 12px;
+	margin-right: 12px;	
+}
+
+a {
+	color: #4183C4;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}

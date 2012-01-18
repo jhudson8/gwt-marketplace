@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:FlowPanel>
+		<g:SimplePanel ui:field="headContainer"></g:SimplePanel>
+		<g:HTMLPanel>
+			<div class="main-container" style="position: relative">
+				<g:SimplePanel ui:field="navContainer" styleName="navContainer"></g:SimplePanel>
+				<g:FlowPanel styleName="bodyContainer">
+					<g:SimplePanel ui:field="messagesContainer"></g:SimplePanel>
+					<g:SimplePanel ui:field="bodyContainer"></g:SimplePanel>
+				</g:FlowPanel>
+			</div>
+		</g:HTMLPanel>
+	</g:FlowPanel>
+
+</ui:UiBinder>

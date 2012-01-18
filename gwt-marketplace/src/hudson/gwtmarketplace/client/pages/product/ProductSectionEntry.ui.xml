@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:HorizontalPanel width="100%">
+		<g:Hyperlink ui:field="productLink"></g:Hyperlink>
+		<g:SimplePanel ui:field="custom"></g:SimplePanel>
+	</g:HorizontalPanel>
+  
+</ui:UiBinder>

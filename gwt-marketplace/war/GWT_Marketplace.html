@@ -1,0 +1,366 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html style="height: 100%">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <style type="text/css">
+body {
+	font: 13.34px helvetica, arial, freesans, clean, sans-serif;
+	background: url(images/bg.png);
+	height: 100%;
+}
+
+.ajax-loading {
+	cursor: wait;
+}
+.ajax-loading a {
+	cursor: wait;
+}
+
+#titlebar {
+	color: #425A70;
+	font-weight: bold;
+	font-size: 20px;	
+}
+
+#header {
+	position: relative;
+}
+#headerlinks {
+	background: url(images/line2.png);
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#headerlinks a {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+#headerlinks a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;	
+}
+#subtitlebar {
+	position: absolute;
+	left: 220px;
+	top: 4px;
+	color: #425A70;
+	font-size: 14px;
+}
+
+.feed-odd {
+	background-color: #FFFFFF;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-bottom: 2px;
+}
+
+.gwt-TabPanel {
+	width: 100%;
+}
+.margin-top {
+	margin-top: 12px;	
+}
+.padding-top {
+	padding-top: 12px;	
+}
+
+.navContainer {
+	position: absolute;
+	width: 155px;
+}
+
+.bodyContainer {
+	margin-left: 167px;
+	margin-top: 12px;
+}
+
+.mainSectionContainer {
+	margin-left: 12px;
+	margin-right: 12px;	
+}
+
+a {
+	color: #4183C4;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+.tag {
+	font-size: larger;	
+}
+
+.lookdatatable {
+	border: solid 1px #CCCCCC;
+}
+
+.lookdatatable-row {
+	background-color: #FAFAFA;
+	border-bottom: solid 6px #CCCCCC;		
+}
+
+:focus {
+	outline: 0;
+}
+
+h3 {
+	border-bottom:1px solid #AAAAAA;
+	color:#666666;
+	font-size:16px;
+	height:24px;
+	line-height:18px;
+	padding-left:4px;
+	padding-top:4px;	
+}
+.productIcon {
+	border: solid 2px #CCCCCC;
+}
+
+.labeled-field td {
+	padding: 4px;
+}
+
+.labeled-field .field-label {
+	display: block;
+	float: left;
+	width: 11em;
+	margin-right: 1em;
+	margin-left: 4px;
+	font-size: 12px;
+	text-indent: 8px;
+}
+
+/* LABEL SIZES */
+.label-short .field-label {
+	width: 5em;
+}
+
+.label-xlong .field-label {
+	width: 19em;
+}
+
+.label-xxlong .field-label {
+	width: 28em;
+}
+
+.label-xxxlong .field-label {
+	width: 31em;
+}
+
+.label-long .field-label {
+	width: 15em;
+}
+
+.field-short {
+	width: 80px;
+}
+
+.field-medium {
+	width: 140px;
+}
+
+.field-long {
+	width: 240px;
+}
+
+.field-xlong {
+	width: 440px;
+}
+.section {
+	background-color: #FAFAFA;
+	border: solid 1px #CCCCCC;
+	-moz-border-radius: 3px;	
+}
+
+.section-title {
+	color: #666;
+	font-size: 16px;
+	border-bottom: solid 1px #AAA;
+	padding-left: 4px;
+	padding-top: 4px;
+	line-height: 18px;
+	height: 24px;
+}
+
+.section-body {
+	min-height: 40px;
+	padding: 6px;
+}
+
+/** DATA TABLE **/
+.datagrid {
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 1px 1px 0px 0px;
+}
+
+.datagrid td {
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 0px 0px 1px 1px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.datagrid .header td {
+	background: #D8D8DA url(images/layout/sprite.png) repeat-x scroll 0 0;
+}
+
+.datagrid tr.selectable {
+	cursor: hand;
+	cursor: pointer;
+}
+
+.datagrid tr.even {
+	background: #FAFAFA;
+	color: #000000;
+}
+
+.datagrid tr.odd {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.datagrid tr.selected {
+	background: #4183C4 !important;
+	color: #FFFFFF !important;
+}
+
+.datagrid tr.highlighted {
+	background: #B2D2FF !important;
+}
+
+/** SECTIONS **/
+.info {
+	background-color: #F7FAFD;
+	border-bottom: 2px solid #B5D3FF;
+	border-top: 2px solid #B5D3FF;
+	padding: 4px;
+}
+
+/** COMMENT BOX **/
+.commentbox {
+	background-color: #FFFFFF;
+	border: solid 1px #cccccc;
+	-moz-border-radius: 6px;
+	padding: 10px;
+}
+
+.commentfooter {
+	background: url(images/components/comment-arrow.png) 20px 0 no-repeat;
+	/*20px 0 equals horizontal and vertical position of arrow. Adjust as desired (ie: 20px -5px).*/
+	padding-left: 58px;
+	padding-top: 1px;
+	margin-bottom: 2em;
+	font-size: 90%;
+	color: #4A4A4A;
+	position: relative;
+	top: -1px;
+}
+
+.gwt-TabBar {
+	background: #E4E4E4 url(images/components/tab_background.gif) repeat-x
+		!important;
+	height: 26px;
+	padding: 6px 10px;
+}
+
+.gwt-TabBar .gwt-TabBarItem {
+	-moz-border-radius: 4px 4px 4px 4px;
+	color: #666666;
+	float: left;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 10px;
+	padding: 0 8px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+	font-weight: bold;
+	position: relative;
+	top: -1px;
+}
+
+.gwt-TabPanelBottom {
+	padding: 6px;
+	border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FAFAFA;
+}
+
+.form-panel {
+	background-color: #FAFAFA;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	border-style: solid;
+	padding: 6px;
+	-moz-border-radius: 3px;
+}
+    </style>
+
+    <title>GWT Marketplace</title>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body height="100%">
+  	<table height="100%" width="1024px" style="margin: auto">
+  		<tr>
+  			<td style="width: 1024px; height: 100%" valign="top">
+  				<div id="content" style="height: 100%">
+	  				<table width="100%" height="100%">
+	  					<tr>
+	  						<td align="center" valign="middle">
+								<div class="section" style="width: 300px; height: 180px">
+									<h3>Loading GWT Marketplace...</h3>
+									<br/>
+									<img src="images/ajax-loader.gif" alt="loading"/>
+								</div>
+	  						</td>
+	  					</tr>
+	  				</table>
+  				</div>
+  			</td>
+  		</tr>
+  	</table>
+
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAaPJiiPJ2crhOiGtTjAslwhRi_j0U6kJrkFvY4-OX2XYmEAa76BQoIZ-ZRhVcgpXNnMbRlKiHKf-MNA"></script>
+    <script type="text/javascript">
+    	google.load("feeds", "1");
+    </script>
+    <script type="text/javascript" language="javascript" src="gwt_marketplace/gwt_marketplace.nocache.js"></script>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+  </body>
+</html>

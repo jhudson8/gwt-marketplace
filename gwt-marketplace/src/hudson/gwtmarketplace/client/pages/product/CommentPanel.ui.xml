@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<ui:style>
+		.productIcon {
+			border: solid 2px #CCCCCC;
+		}
+		.marginTop {
+			margin-top: 12px;
+		}
+		h3 {
+			border-bottom: solid 1px #CCCCCC;
+			margin-bottom: 4px;
+		}
+		tr.even {
+			background-color: #DDDDDD;
+		}
+		tr.odd {
+			background-color: #FFFFFF;
+		}
+		table.infoTable {
+			border-spacing: 0;
+		}
+		table.infoTable td {
+			padding-right: 12px;
+		}
+	</ui:style>
+
+	<g:FlowPanel>
+		<g:HTMLPanel>
+			<div class="commentbox">
+				<g:VerticalPanel>
+					<g:SimplePanel ui:field="ratingContainer"></g:SimplePanel>
+					<g:SimplePanel ui:field="dislosureContainer"></g:SimplePanel>
+					<g:Label ui:field="comment"></g:Label>
+				</g:VerticalPanel>
+			</div>
+			<div class="commentfooter"><g:Label ui:field="commentFooter"></g:Label></div>
+		</g:HTMLPanel>
+	</g:FlowPanel>
+
+</ui:UiBinder>
